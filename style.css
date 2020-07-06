@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.robot {
+  position: relative;
+  width: 100wh;
+  height: 100vh;
+}
+
+.head {
+  width: 150px;
+  height: 105px;
+  background-color: rgb(106, 152, 226);
+  border-radius: 150px 150px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  margin: auto;
+  transition: transform 4s ease;
+  overflow: hidden;
+}
+
+#left-eye {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #fff;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+}
+
+#right-eye {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #fff;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+}
+
+.head:hover {
+  width: 200px;
+}
+
+.container {
+  margin: auto;
+}
+
+#main-header {
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #56a79a;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 30px;
+  color: darkblue;
+  padding: 2rem;
+  background-color: aqua;
+}
+
+.body {
+  width: 150px;
+  height: 230px;
+  background-color: rgb(106, 152, 226);
+  border-radius: 0 0 25px 25px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.hands #right-hand {
+  width: 25px;
+  height: 160px;
+  background-color: rgb(106, 152, 226);
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 190px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: transform 0.5s ease;
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.hands #right-hand:hover {
+  transform-origin: top left;
+  transform: rotate(-30deg);
+}
+
+.hands #left-hand {
+  width: 25px;
+  height: 160px;
+  background-color: rgb(106, 152, 226);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 190px;
+  bottom: 0;
+  margin: auto;
+  transition: transform 0.5s ease;
+  transform-origin: top right;
+  overflow: hidden;
+}
+
+.hands #left-hand:hover {
+  transform-origin: top right;
+  transform: rotate(30deg);
+}
+
+.legs #right-leg {
+  width: 30px;
+  height: 90px;
+  background-color: rgb(106, 152, 226);
+  border-radius: 10px;
+  position: absolute;
+  top: 320px;
+  left: 70px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: top left;
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+
+.legs #right-leg:hover {
+  transform-origin: top left;
+  transform: rotate(-30deg);
+}
+
+.legs #left-leg {
+  width: 30px;
+  height: 90px;
+  background-color: rgb(106, 152, 226);
+  border-radius: 10px;
+  position: absolute;
+  top: 320px;
+  left: 0;
+  right: 70px;
+  bottom: 0;
+  margin: auto;
+}
