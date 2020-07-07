@@ -1,7 +1,7 @@
 # Dancing Robot
  A Robot which dance on hover.
  
-## Visit Database
+## Visit Robot
 * [Click Here](https://dancing-robot-js.netlify.app/)
 
 ## Getting Started
